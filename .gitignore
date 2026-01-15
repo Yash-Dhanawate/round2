@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+
+/notebook/main.html
+/notebook/main.pdf
+
+/data/chemical_data_null.csv
+/data/chemical_data.csv
