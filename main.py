@@ -107,7 +107,7 @@ It helps chemists quickly evaluate molecules before lab experiments.
 
 
 smiles = st.text_input("Enter SMILES")
-model = pkl.load(open(r'models\best_model(rf_with_fp).pkl', 'rb'))
+model = pkl.load(open(r'models/best_model(rf_with_fp).pkl', 'rb'))
 
 if st.button("Predict"):
     if smiles:
