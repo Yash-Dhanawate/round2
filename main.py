@@ -23,14 +23,14 @@ st.write("""
         
 """)
 
-df = pd.read_csv(r'data\chemical_data_processed.csv')
+df = pd.read_csv(r'data/chemical_data_processed.csv')
 with st.expander("🗂️ Dataset:"):
     st.dataframe(df)
 
 corr = df.corr(numeric_only=True)
 
 with st.expander("📟 Correlation Matrix"):
-    st.image("plots\correlation_matrix.png", caption="Correlation Matrix")
+    st.image("plots/correlation_matrix.png", caption="Correlation Matrix")
 
 # ----------------------------------------------------------------
 st.divider()
@@ -90,9 +90,9 @@ with st.expander("📌 Model Details"):
                 • **Fingerprints**: Morgan (ECFP)  
                 • **Threshold**: Activity < `200 nM` = Active
                 """)
-    st.image(r"plots\feature_importance_Random Forest.png", caption="Feature Importance")
-    st.image(r"plots\shap_waterfall_active_12.png", caption="Contribution for Active Prediction")
-    st.image(r"plots\shap_waterfall_inactive_12.png", caption="Contribution for Inactive Prediction")
+    st.image(r"plots/feature_importance_Random Forest.png", caption="Feature Importance")
+    st.image(r"plots/shap_waterfall_active_12.png", caption="Contribution for Active Prediction")
+    st.image(r"plots/shap_waterfall_inactive_12.png", caption="Contribution for Inactive Prediction")
 
 # ----------------------------------------------------------------
 st.divider()
