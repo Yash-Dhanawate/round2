@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 from rdkit import Chem
 from rdkit.Chem import Descriptors, rdMolDescriptors, Crippen, AllChem
-
+import rdkit
 
 def calculate_descriptors_safe(smiles):
     
@@ -43,3 +43,4 @@ if __name__ == "__main__":
     test_smiles = "COc1cc(OC)cc(-c2cc3cnc(N(CCCO)C(C)=O)cc3nc2NC(=O)NC(C)(C)C)c1"
     descriptors = calculate_descriptors_safe(test_smiles)
     print(descriptors)
+    print(rdkit.__version__)
