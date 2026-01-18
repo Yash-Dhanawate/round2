@@ -130,26 +130,6 @@ if st.button("Predict"):
         st.subheader("🧬 Calculated Descriptors")
         st.dataframe(descriptors[desc_feature_names])
         
-        # ------------------------------------------------------------
-        
-        importances = model.feature_importances_[:len(desc_feature_names)]
-
-        fi_df = pd.DataFrame({
-            'Feature': desc_feature_names,
-            'Importance': importances
-        }).sort_values(by='Importance', ascending=False)
-        
-        st.subheader("🔎 Descriptor Feature Importances")
-        px_fig = px.bar(
-                        fi_df,
-                        x='Importance',
-                        y='Feature',
-                        title="Descriptor Feature Importances",
-                        text='Importance',
-                        orientation='h',
-                        color='Importance'
-        )
-        st.plotly_chart(px_fig, use_container_width=True)
     else:
         st.warning("Please enter a valid SMILES")
 
