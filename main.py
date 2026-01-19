@@ -90,7 +90,6 @@ with st.expander("📌 Model Details"):
                 • **Fingerprints**: Morgan (ECFP)  
                 • **Threshold**: Activity < `200 nM` = Active
                 """)
-    st.image(r"plots/feature_importance_Random Forest.png", caption="Feature Importance")
     st.image(r"plots/fp_model_shap_waterfall_active.png", caption="Contribution for Active Prediction")
     st.image(r"plots/fp_model_shap_waterfall_inactive.png", caption="Contribution for Inactive Prediction")
 
