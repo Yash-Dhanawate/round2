@@ -38,10 +38,10 @@ Calculated using **RDKit**:
 ## 📊 Exploratory Data Analysis
 
 ### Activity Class Distribution
-![Activity Distribution](plots\activity_distribution.png)
+![Activity Distribution](plots/activity_distribution.png)
 
 ### Descriptor Correlation Matrix
-![Correlation Matrix](plots\correlation_matrix.png)
+![Correlation Matrix](plots/correlation_matrix.png)
 
 ### Pairwise Descriptor Relationships
 ![Pairplot](plots/pairplot.png)
